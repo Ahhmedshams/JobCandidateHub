@@ -5,5 +5,4 @@ namespace JobCandidateHub.Application.Interfaces.Persistence;
 
 public interface ICandidateRepository : IRepository<Candidate>
 {
-    void Update(Candidate candidate);
 }
