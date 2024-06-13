@@ -21,7 +21,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHub.Infrastruct
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Architecture.Tests", "test\Architecture.Tests\Architecture.Tests.csproj", "{A8AFAD61-C161-4BA5-9BA3-8E88690EBCC7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JobCandidateHub.Application.Tests", "JobCandidateHub.Application.Tests\JobCandidateHub.Application.Tests.csproj", "{994FC4E1-B203-49A6-A54A-294B3D38488B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "JobCandidateHub.Application.Tests", "test\JobCandidateHub.Application.Tests\JobCandidateHub.Application.Tests.csproj", "{1DF9262C-8A3D-455B-8820-DC259871ED91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,10 +49,10 @@ Global
 		{A8AFAD61-C161-4BA5-9BA3-8E88690EBCC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8AFAD61-C161-4BA5-9BA3-8E88690EBCC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A8AFAD61-C161-4BA5-9BA3-8E88690EBCC7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{994FC4E1-B203-49A6-A54A-294B3D38488B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{994FC4E1-B203-49A6-A54A-294B3D38488B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{994FC4E1-B203-49A6-A54A-294B3D38488B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{994FC4E1-B203-49A6-A54A-294B3D38488B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DF9262C-8A3D-455B-8820-DC259871ED91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DF9262C-8A3D-455B-8820-DC259871ED91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DF9262C-8A3D-455B-8820-DC259871ED91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DF9262C-8A3D-455B-8820-DC259871ED91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -65,7 +65,7 @@ Global
 		{F7058471-548D-4F90-B16F-7E858771B8C6} = {D4F8319A-8D2C-4FDA-AA0E-BCF096230BE5}
 		{8F87C25D-F1E6-4968-AF40-B9FBB950DD62} = {F7058471-548D-4F90-B16F-7E858771B8C6}
 		{A8AFAD61-C161-4BA5-9BA3-8E88690EBCC7} = {1962F21E-DAA0-441E-A29D-257BAEAC8B56}
-		{994FC4E1-B203-49A6-A54A-294B3D38488B} = {1962F21E-DAA0-441E-A29D-257BAEAC8B56}
+		{1DF9262C-8A3D-455B-8820-DC259871ED91} = {1962F21E-DAA0-441E-A29D-257BAEAC8B56}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {24402D33-A512-4735-8F8B-8F4798C21742}
