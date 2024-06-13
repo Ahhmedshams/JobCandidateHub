@@ -19,7 +19,7 @@ public static class DependencyInjection
 
     public static IServiceCollection AddPersistence(this IServiceCollection services, ConfigurationManager configuration)
     {
-        services.AddDbContext<JobCandidateHubDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("Default")));
+        services.AddDbContext<JobCandidateHubDbContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
         services.AddScoped<JobCandidateHubDbContext>();
         services.AddScoped<ICandidateRepository, CandidateRepository>();
 
