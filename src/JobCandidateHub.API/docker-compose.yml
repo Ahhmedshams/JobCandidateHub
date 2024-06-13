@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "Strong@Passw0rd"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1433:1433"
+    volumes:
+      - sqlserverdata:/var/opt/mssql
+
+  webapi:
+    build:
+      context: .
+      dockerfile: src/JobCandidateHub.API/Dockerfile
+    container_name: webapi
+    depends_on:
+      - sqlserver
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=JobCandidateHubDb;User=sa;Password=Strong@Passw0rd;
+    ports:
+      - "5000:80"
+    volumes:
+      - ./src:/src
+
+volumes:
+  sqlserverdata:
