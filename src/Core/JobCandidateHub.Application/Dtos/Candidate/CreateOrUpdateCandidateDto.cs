@@ -1,4 +1,5 @@
-﻿using System;
+﻿using JobCandidateHub.Application.Attribute;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
@@ -22,9 +23,11 @@ public class CreateOrUpdateCandidateDto
     public string Email { get; set; } = string.Empty;
     public string CallTime { get; set; }
     [MaxLength(200)]
-    public string LinkedInUrl { get; set; }
+    [SpecificUrl("linkedin.com")]
+    public string? LinkedInUrl { get; set; }
     [MaxLength(200)]
-    public string GitHubUrl { get; set; }
+    [SpecificUrl("github.com")]
+    public string? GitHubUrl { get; set; }
     [Required]
     [MaxLength(500)]
     public string Comment { get; set; } = string.Empty;

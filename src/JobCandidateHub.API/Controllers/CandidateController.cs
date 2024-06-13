@@ -1,4 +1,4 @@
-using JobCandidateHub.Application.Command.Candidate;
+using JobCandidateHub.Application.Command;
 using JobCandidateHub.Application.Dtos.Candidate;
 using JobCandidateHub.Domain.Entities;
 using MediatR;
