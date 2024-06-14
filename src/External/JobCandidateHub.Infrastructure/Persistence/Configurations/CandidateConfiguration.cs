@@ -47,5 +47,13 @@ public class CandidateConfiguration : IEntityTypeConfiguration<Candidate>
         builder.Property(c => c.Comment)
             .HasColumnName("comment")
             .HasMaxLength(500);
+
+        builder.Property(e => e.CreatedDate)
+               .IsRequired()
+               .HasDefaultValueSql("GETDATE()");
+
+        builder.Property(e => e.LastUpdatedDate)
+              .IsRequired()
+              .HasDefaultValueSql("GETDATE()");
     }
 }

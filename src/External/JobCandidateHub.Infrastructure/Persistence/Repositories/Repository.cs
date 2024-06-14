@@ -63,7 +63,7 @@ public class Repository<T> : IRepository<T> where T : class
         await _context.SaveChangesAsync(cancellationToken);
     }
 
-    public void Update(T entity)
+    public virtual void Update(T entity)
     {
         _context.Entry(entity).State = EntityState.Modified;
     }

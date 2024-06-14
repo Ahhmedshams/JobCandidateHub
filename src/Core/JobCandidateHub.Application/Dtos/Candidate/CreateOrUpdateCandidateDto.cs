@@ -17,11 +17,11 @@ public class CreateOrUpdateCandidateDto
     [MaxLength(50)]
     public string LastName { get; set; } = string.Empty;
     [MaxLength(20)]
-    public string PhoneNumber { get; set; }
+    public string? PhoneNumber { get; set; }
     [Required]
     [EmailAddress]
     public string Email { get; set; } = string.Empty;
-    public string CallTime { get; set; }
+    public string? CallTime { get; set; }
     [MaxLength(200)]
     [SpecificUrl("linkedin.com")]
     public string? LinkedInUrl { get; set; }

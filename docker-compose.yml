@@ -21,9 +21,9 @@ services:
       - sqlserver
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=JobCandidateHubDb;User=sa;Password=Strong@Passw0rd;
+      - ConnectionStrings__DefaultConnection=Server=sqlserver;Database=JobCandidateHubDb;User=sa;Password=Strong@Passw0rd;TrustServerCertificate=True;
     ports:
-      - "5000:80"
+      - "5000:8080"
     volumes:
       - ./src:/src
 

@@ -17,4 +17,7 @@ public class Candidate
     public string LinkedInUrl { get; set; }
     public string GitHubUrl { get; set; }
     public string Comment { get; set; }
+    public DateTime CreatedDate { get; set; }
+    public DateTime LastUpdatedDate { get; set; }
+
 }

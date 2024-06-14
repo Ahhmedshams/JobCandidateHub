@@ -15,4 +15,9 @@ internal class CandidateRepository : Repository<Candidate>, ICandidateRepository
     {
     }
 
+    public override void Update(Candidate entity)
+    {
+        entity.LastUpdatedDate = DateTime.Now;
+        base.Update(entity);
+    }
 }
